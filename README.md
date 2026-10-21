@@ -16,8 +16,11 @@ O script de varredura é somente leitura.
 uv run --python 3.12 --with-requirements requirements.txt python scripts/varredura_conta.py ID_DA_CONTA
 ```
 
-Para listar as contas que o token enxerga:
-`https://graph.facebook.com/v26.0/me/adaccounts?fields=name,account_id&access_token=SEU_TOKEN` (não compartilhe essa URL).
+Para listar as contas que o seu token enxerga (e conferir se está tudo certo):
+
+```
+uv run --python 3.12 --with-requirements requirements.txt python scripts/listar_contas.py
+```
 
 ## Cuidados
 

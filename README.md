@@ -27,3 +27,8 @@ uv run --python 3.12 --with-requirements requirements.txt python scripts/listar_
 - `.env` e `dados/` nunca vão para o git (token dá acesso às contas dos clientes; `dados/` guarda dados de clientes).
 - Não envie o token por WhatsApp, e-mail ou chat. Use o cofre de senhas ou um link de uso único com expiração.
 - Saiu alguém da equipe, ou o token vazou? Avise o Pedro: o token daquela pessoa é revogado sem afetar os outros.
+
+## Dados para analisar no Claude Desktop
+
+O Claude Desktop lê pastas anexadas, mas não roda comandos. Por isso os dados são baixados antes, aqui, e cada pasta traz um `_LEIAME.md`.
+Peça ao Claude Code: "atualize os dados do Meta" (ou rode o script de download). Depois anexe a pasta do cliente ao projeto dele no Claude Desktop e cole o conteúdo de `INSTRUCOES_CLAUDE_DESKTOP.md` nas instruções do projeto.
